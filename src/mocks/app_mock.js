@@ -1,12 +1,14 @@
-const add      = jest.fn((a, b) => a + b)
-const subtract = jest.fn((a, b) => a - b)
-const multiply = jest.fn((a, b) => a * b)
-const divide   = jest.fn((a, b) => a / b)
+const { add, subtract, multiply, divide } = require("../math")
+
+const doAdd      = jest.fn((a, b) => add(a,b))
+const doSubtract = jest.fn((a, b) => subtract(a,b))
+const doMultiply = jest.fn((a, b) => multiply(a,b))
+const doDivide   = jest.fn((a, b) => divide(a,b))
 
 
 module.exports = {
-    add,
-    subtract,
-    multiply,
-    divide
+    doAdd,
+    doSubtract,
+    doMultiply,
+    doDivide
 }
