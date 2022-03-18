@@ -1,9 +1,19 @@
-import { add, subtract, divide, multiply} from './math.js';
+const {add, subtract, divide, multiply } = require("./math")
 
-export const doAdd      = (a, b) => add(a, b)
 
-export const doSubtract = (a, b) => subtract(a, b)
 
-export const doMultiply = (a, b) => multiply(a, b)
+const doAdd = (a, b) => add(a, b)
 
-export const doDivide   = (a, b) => divide(a, b)
+const doSubtract = (a, b) => subtract(a, b)
+
+const doMultiply = (a, b) => multiply(a, b)
+
+const doDivide   = (a, b) => divide(a, b)
+
+
+module.exports = {
+    doAdd,
+    doSubtract,
+    doMultiply,
+    doDivide
+}
