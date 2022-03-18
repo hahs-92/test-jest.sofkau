@@ -42,5 +42,3 @@ describe("Testing Divide", () => {
         expect(divide(10,5)).toBe(2)
     })
 })
-
-
